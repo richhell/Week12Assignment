@@ -15,17 +15,17 @@ async function onGetBooksClick() {
 
     booksContainer.innerHTML = bookList.map(
         book => `<div class="bg-light rounded mt-5">
-            <h3>${book.title}</h3>
+            <h3>${book.title} by ${book.author}</h3>
             <p>${book.genreId}</p>
         </div>`
     ).join("")
 }
 
-let lastCreatedItem = null
+let lastCreatedItem = null; 
 
 async function onAddBookClick() {
    
-    const testBook = { title: "Test", genreId: 1 }
+    const testBook = { title: "Test", author: "no one", genreId: 1 }
     const response = await fetch("http://localhost:3000/books", {
         method: "POST", 
         headers: { "Content-Type": "application/json" }, 
@@ -46,7 +46,7 @@ async function onUpdateBookClick() {
     fetch("http://localhost:3000/books/" + lastCreatedItem.id, {
         method: "PUT", 
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ title: "Test Updated", genreId: 2 })
+        body: JSON.stringify({ title: "Test Updated", author: "no one", genreId: 2 })
     })
 }
 

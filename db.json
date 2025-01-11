@@ -37,23 +37,8 @@
     {
       "id": 3,
       "title": "Hope You Are Satisfied",
-      "author": "Tnia Malik",
+      "author": "Tania Malik",
       "genreId": 2
-    },
-    {
-      "title": "Test",
-      "genreId": 1,
-      "id": 4
-    },
-    {
-      "title": "Test",
-      "genreId": 1,
-      "id": 5
-    },
-    {
-      "title": "Test",
-      "genreId": 1,
-      "id": 6
     }
   ],
   "reviews": [
