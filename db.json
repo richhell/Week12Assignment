@@ -1,0 +1,71 @@
+{
+  "genres": [
+    {
+      "id": 1,
+      "name": "Science-Fiction"
+    },
+    {
+      "id": 2,
+      "name": "Literary"
+    },
+    {
+      "id": 3,
+      "name": "Fantasy"
+    },
+    {
+      "id": 4,
+      "name": "Humor"
+    },
+    {
+      "id": 5,
+      "name": "Mystery"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "Entitlement",
+      "author": "Rumaan Alam",
+      "genreId": 2
+    },
+    {
+      "id": 2,
+      "title": "The Water Outlaws",
+      "author": "S. L. Huang",
+      "genreId": 3
+    },
+    {
+      "id": 3,
+      "title": "Hope You Are Satisfied",
+      "author": "Tnia Malik",
+      "genreId": 2
+    },
+    {
+      "title": "Test",
+      "genreId": 1,
+      "id": 4
+    },
+    {
+      "title": "Test",
+      "genreId": 1,
+      "id": 5
+    },
+    {
+      "title": "Test",
+      "genreId": 1,
+      "id": 6
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "bookId": 1,
+      "content": "Slow-burning character study."
+    },
+    {
+      "id": 2,
+      "bookId": 2,
+      "content": "Ass-kicking fantasy!"
+    }
+  ]
+}
