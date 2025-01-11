@@ -7,6 +7,7 @@
 // You do NOT need update, but you can add it if you'd like
 // Use Bootstrap and/or CSS to style your project
 
+//Books 
 const booksContainer = document.getElementById("books-container")
 
 async function onGetBooksClick() {
@@ -60,5 +61,21 @@ async function onDeleteBookClick() {
     fetch("http://localhost:3000/books/" + lastCreatedItem.id, {
         method: "DELETE", 
     })
+}
+
+//List the Genres
+
+const genresContainer = document.getElementById("genres-container")
+
+async function onFetchGenresClick() {
+    const response = await fetch("http://localhost:3000/genres")
+    const genreList = await response.json()
+
+    genresContainer.innerHTML = genreList.map(
+        genre => `<div class="bg-light rounded mt-5">
+            <h3>${genre.name}</h3>
+            <p>id: ${genre.id}</p>
+        </div>`
+    ).join("")
 }
 

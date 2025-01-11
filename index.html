@@ -12,12 +12,18 @@
     <div class="container mt-5">
         <!--Books-->
         <button onclick="onGetBooksClick()" class="btn btn-primary btn-lg">Get Books</button>
-        <button onclick="onAddBookClick()" class="btn btn-success mx-3 btn-lg">Add a Test Book</button>
+        <button onclick="onAddBookClick()" class="btn btn-success mx-3 btn-lg">Add a Book</button>
         <button onclick="onUpdateBookClick()" class="btn btn-primary mx-3 btn-lg">Update Test Book</button>
         <button onclick="onDeleteBookClick()" class="btn btn-danger mx-3 btn-lg">Delete Last Book</button>
         <div id="books-container"></div>
 
     </div>
+     <!-- Genres -->
+     <div class="d-flex text-nowrap">
+        <button onclick="onFetchGenresClick()" class="btn btn-primary btn-lg">Get Genre List</button>
+        
+    </div>
+    <div id="genres-container" class="container mt-3"></div>
     <script src="index.js"></script>
 </body>
 </html>
