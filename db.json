@@ -1,17 +1,11 @@
 {
-  
   "books": [
     {
-      "id": 1,
-      "title": "Entitlement",
-      "author": "Rumaan Alam"
+      "id": 1
     },
     {
       "id": 2,
-      "title": "The Water Outlaws",
-      "author": "S. L. Huang"
-    }   
-    
+      "title": "The Water Outlaws"
+    }
   ]
-  
 }

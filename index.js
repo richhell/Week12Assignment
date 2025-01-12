@@ -8,7 +8,8 @@
 // Use Bootstrap and/or CSS to style your project
 
 //Books 
-const booksContainer = document.getElementById("books-container")
+
+
 
 
 
