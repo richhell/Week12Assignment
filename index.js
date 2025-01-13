@@ -11,6 +11,7 @@
 
 const booksContainer = document.getElementById("books-container")
 
+//Gets the list of books from the database
 async function onFetchBooksClick() {
     const response = await fetch("http://localhost:3000/books")
     const bookList = await response.json()
@@ -25,6 +26,7 @@ async function onFetchBooksClick() {
 
 let lastCreatedItem = null
 
+// Adds a Test Book to the list.
 async function onCreateBookClick() {
     const testBook = { title: "Test Book", genreId: 2 }
     const response = await fetch("http://localhost:3000/books", {
@@ -37,6 +39,7 @@ async function onCreateBookClick() {
     lastCreatedItem = newlyCreatedItem
 }
 
+//Deletes the Test book from the list.
 async function onDeleteBookClick() {
     if(lastCreatedItem === null) {
         console.log("No item created yet to delete")
@@ -51,8 +54,8 @@ async function onDeleteBookClick() {
 // Genres 
 
 const genresContainer = document.getElementById("genres-container")
-const genreIdTextbox = document.getElementById("genre-id-textbox")
 
+// Gets the list of genres in the database. 
 async function onFetchGenresClick() {
     const response = await fetch("http://localhost:3000/genres")
     const genreList = await response.json()
