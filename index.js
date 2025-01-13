@@ -11,7 +11,7 @@
 
 const booksContainer = document.getElementById("books-container")
 
-//Gets the list of books from the database
+//Gets the list of books from the database.
 async function onFetchBooksClick() {
     const response = await fetch("http://localhost:3000/books")
     const bookList = await response.json()
@@ -47,7 +47,7 @@ async function onDeleteBookClick() {
     }
     
     fetch("http://localhost:3000/books/" + lastCreatedItem.id, {
-        method: "DELETE", // delete
+        method: "DELETE", 
     })
 }
 
